@@ -1,0 +1,31 @@
+.profile{
+	float: middle;
+	width: auto;
+	height: 40%;
+	margin: 100px 0px;
+	background: transparent;
+	overflow: hidden;
+}
+
+.cover_image {
+	position: relative;
+	width: 50%;
+	display: block;
+	top: 30%; left: 25%; 
+}
+
+.function {
+	position: relative;
+	width: 50%;
+	top: 30%; left: 25%; 
+}
+
+.realfunction {
+	width: 50%;
+	margin:100px 100px; 
+}
+
+.functionimg {
+	width: 50%;
+}
+

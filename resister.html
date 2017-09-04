@@ -7,16 +7,82 @@
 <body>
 	<div class = "textbox">
   <form action="/action_page.php">
-    <label for="fname">Name</label>
+    <h3>Name</h3>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="gender">Gender</label>
+    <h3>Age</h3>
+    <select id="age" name="age">
+      <option value="selectp">Please select</option>
+      <option value="under18">Under 18</option>
+      <option value="18to21">18 to 21</option>
+      <option value="22to25">22 to 25</option>
+      <option value="25to29">25 to 29</option>
+      <option value="30to39">30 to 39</option>
+      <option value="40to49">40 to 49</option>
+      <option value="50to59">50 to 59</option>
+    </select>
+
+    <h3>Gender</h3>
     <select id="gender" name="gender">
       <option value="male">Male</option>
       <option value="female">Female</option>
       <option value="other">Other</option>
     </select>
+
+
+    <h3>Email</h3>
+    <input type="text" id="email" name="emailaddress" placeholder="Your email">
+    <input type="text" id="cemail" name="cemailaddress" placeholder="Confirm your email">   
+
+    <h3>Some question about yourself</h3>
+    <div class="align-100 show">
+      <div class="align-70">
+        <p>Is this your first time using this website?</p>
+          <div class="squaredFour">
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">Yes</label>
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">No</label>
+          </div>
+      </div>
+      <div class="align-70">
+        <p>Have you used therapy before?</p>
+          <div class="squaredFour">
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">Yes</label>
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">No</label>
+          </div>
+      </div>
+      <div class="align-70">
+        <p>Have you ever thought about going to the therapy?</p>
+          <div class="squaredFour">
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">Yes</label>
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">No</label>
+          </div>
+      </div>
+      <div class="align-70">
+        <p>What causes you the most stress?</p>
+          <div class="squaredFour">
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">Study</label>
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">Work</label>
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">Life</label>
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">Family</label>
+            <input type="checkbox" value="None" id="squaredFour" name="check"/>
+            <label for="squaredFour">Social</label>
+          </div>
+      </div>
+
+    </div>
+
+
   
     <input type="submit" value="Submit">
   </form>
