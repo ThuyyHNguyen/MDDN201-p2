@@ -1,8 +1,6 @@
 .profile{
 	float: middle;
 	width: auto;
-	height: 40%;
-	margin: 100px 0px;
 	background: transparent;
 	overflow: hidden;
 }
@@ -11,18 +9,20 @@
 	position: relative;
 	width: 50%;
 	display: block;
-	top: 30%; left: 25%; 
+	top: 0%; left: 25%; 
 }
 
 .function {
 	position: relative;
 	width: 50%;
-	top: 30%; left: 25%; 
+	left: 25%; 
+	background-color: #f2f2f2;
 }
 
-.realfunction {
-	width: 50%;
-	margin:100px 100px; 
+.realfunc {
+	width: 40%;
+	margin:10px 20px; 
+	float: left;
 }
 
 .functionimg {
