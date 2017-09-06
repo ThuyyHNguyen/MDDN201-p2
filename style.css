@@ -3,7 +3,7 @@ html{
 }
 body{
     margin: 0px; /* Often browsers have a 5px margin by deafult*/
-    font-family: sans-serif;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
 }
 
 /*nav bar*/
@@ -12,7 +12,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #77abff;
+    background-color: #F9F188;
 }
 
 li {
@@ -30,6 +30,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
 }
 
 li a:hover {
@@ -264,3 +265,17 @@ body {font-family: Verdana,sans-serif;margin:0}
   .prev, .next,.text {font-size: 11px}
 }
 /*End slide show for index.html*/
+
+/*index html*/
+.further{
+    display: block;
+    width: 80%;
+    margin: auto;
+    background: transparent;
+}
+.further2{
+    width: 50%;
+    margin: 100px auto;
+    float: auto;
+    background: transparent;
+}
