@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta content="stuff, to, help, search, engines, not" name="keywords">
+<meta content="What this page is about." name="description">
+<meta content="Display Webcam Stream" name="title">
+<title>Display Webcam Stream</title>
+  
+<style>
+
+
+/*nav bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F9F188;
+}
+
+li {
+    background-color: #77abff;
+    width: 100px;
+    margin:5px 5px;
+    border-radius: 25px;
+    border: 2px solid #77abff;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+/*end nav bar*/
+.videoalign{
+	margin: 10px 10px;
+	padding: 50px 20px;
+	background-color: #F9F188;
+}
+.moodalign{
+	width: 50%;
+	margin: 0px auto;
+}
+#container {
+    margin: 0px auto;
+    width: 500px;
+    height: 375px;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+}
+.button {
+	display: block;
+    background-color: #465a96;
+    color: white;
+    padding: 24px 50px;
+    margin: 10px auto;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+}
+.button:hover{
+    background-color: #77abff;
+}
+</style>
+</head>
+  
+<body style="font-family: Arial; background-color: #77abff">
+
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="profile.html">Profile</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+	  <li><a href="about.html">About</a></li>
+	</ul>
+
+	<br>
+	<br>
+
+<div style="margin: 0px 30px; padding: 50px;">
+<h1 style="color: #4d4d4d;">Facial Recognition</h1>
+<p style="color: #4d4d4d;"">This is the website feature to help you to detect your mood by scanning your face. The website will use the webcam on your device to detect your facial expression to decide what mood you have at the moment in order to recommend suitable activities to boost your mood.</p>
+</div>
+
+	<br>
+	<br>
+
+<div class="videoalign">
+	<div id="container">
+	    <video autoplay="true" id="videoElement">
+	     
+	    </video>
+	</div>
+</div>
+
+<div class="moodalign">
+	<img src="img/chooseyourmood.png" style="width: 100%;">
+
+</div>
+
+	<a href="activities.html"><button class="button">Go to Activities</button></a>
+
+<script>
+	var video = document.querySelector("#videoElement");
+ 
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+ 
+if (navigator.getUserMedia) {       
+    navigator.getUserMedia({video: true}, handleVideo, videoError);
+}
+ 
+function handleVideo(stream) {
+    video.src = window.URL.createObjectURL(stream);
+}
+ 
+function videoError(e) {
+    // do something
+}
+ 
+</script>
+</body>
+</html>
